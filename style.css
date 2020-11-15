@@ -1,0 +1,219 @@
+/* 
+основной цвет текста    #757575
+второстепенный цвет текста  #212121
+акцент   #2196f3
+*/
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --button-white: #ffffff;
+  --bg-color-btn: #f5f4fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+/* webstudio */
+
+/* header */
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #000;
+  line-height: 1.2;
+}
+
+.logo > span {
+  color: #2196f3;
+}
+
+.nav-list .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+}
+
+.nav-list .link.current {
+  color: var(--accent-color);
+}
+
+.nav-contacts a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: var(--accent-color);
+}
+
+/* main */
+
+/* hero */
+.hero {
+  background: #2f303a;
+}
+
+.hero h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.hero > .button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+
+  color: var(--button-white);
+  background-color: var(--accent-color);
+}
+
+/* advantages */
+.advantages-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+/* activity */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+/* team */
+.team {
+  background: #f5f4fa;
+}
+
+.employee {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+/* footer */
+.footer {
+  background: #2f303a;
+}
+
+.physical-addr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.connection {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* portfolio */
+
+/* filters */
+.filter {
+  background-color: var(--bg-color-btn);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+
+  color: var(--title-text-color);
+}
+
+.filter:hover,
+.active {
+  background-color: var(--accent-color);
+  color: var(--button-white);
+}
+
+/* projects */
+.project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+
+.type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
