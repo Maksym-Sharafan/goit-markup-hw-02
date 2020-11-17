@@ -10,6 +10,12 @@
   --accent-color: #2196f3;
   --button-white: #ffffff;
   --bg-color-btn: #f5f4fa;
+  --body-bg-color: #ffffff;
+  --text-logo-black: #000;
+  --text-white: #ffffff;
+  --bg-hero-footer: #2f303a;
+  --bg-section-team: #f5f4fa;
+  --adress-text-color: rgba(255, 255, 255, 0.6);
 }
 
 * {
@@ -27,23 +33,23 @@ ul {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #ffffff;
+  background-color: var(--body-bg-color);
 }
 
 /* webstudio */
 
 /* header */
 .logo {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  color: #000;
+  color: var(--text-logo-black);
   line-height: 1.2;
 }
 
 .logo > span {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .nav-list .link {
@@ -53,10 +59,6 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--title-text-color);
-}
-
-.nav-list .link.current {
-  color: var(--accent-color);
 }
 
 .nav-contacts a {
@@ -69,7 +71,8 @@ body {
 }
 
 .nav a:hover,
-.nav a:focus {
+.nav a:focus,
+.nav-list .link.current {
   color: var(--accent-color);
 }
 
@@ -77,7 +80,7 @@ body {
 
 /* hero */
 .hero {
-  background: #2f303a;
+  background: var(--bg-hero-footer);
 }
 
 .hero h1 {
@@ -88,7 +91,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--text-white);
 }
 
 .hero > .button {
@@ -131,7 +134,7 @@ body {
 
 /* team */
 .team {
-  background: #f5f4fa;
+  background: var(--bg-section-team);
 }
 
 .employee {
@@ -154,7 +157,15 @@ body {
 
 /* footer */
 .footer {
-  background: #2f303a;
+  background: var(--bg-hero-footer);
+}
+
+.footer > .logo {
+  color: var(--text-white);
+}
+
+.footer > .logo:hover {
+  color: var(--accent-color);
 }
 
 .physical-addr {
@@ -164,7 +175,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--text-white);
 }
 
 .connection {
@@ -174,7 +185,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--adress-text-color);
 }
 
 /* portfolio */
@@ -193,8 +204,7 @@ body {
   color: var(--title-text-color);
 }
 
-.filter:hover,
-.active {
+.filter:hover {
   background-color: var(--accent-color);
   color: var(--button-white);
 }
